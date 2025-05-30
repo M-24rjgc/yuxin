@@ -22,6 +22,17 @@
     --bg-user: #e6d0aa;
     --bg-overlay: rgba(255, 245, 230, 0.95);
 
+    /* 功能性颜色 - 基于主色调的和谐变化 */
+    --success-color: #B8956A;
+    --success-hover: #A0522D;
+    --warning-color: #D4A574;
+    --danger-color: #C67B5C;
+    --info-color: #DE8877;
+
+    /* 状态指示颜色 */
+    --online-color: #B8956A;
+    --offline-color: #8d7a62;
+
     /* 边框和阴影 */
     --border-color: rgba(139, 69, 19, 0.1);
     --shadow-light: 0 2px 8px rgba(139, 69, 19, 0.08);
@@ -31,6 +42,9 @@
     /* 渐变 */
     --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     --gradient-warm: linear-gradient(135deg, #FFF5E6, #FAEBD7);
+    --gradient-download: linear-gradient(135deg, var(--success-color), var(--success-hover));
+    --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(250, 235, 215, 0.8));
+    --gradient-hero: linear-gradient(135deg, #FFF5E6 0%, #FAEBD7 50%, #f0e0c7 100%);
 
     /* 字体 */
     --font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -204,6 +218,7 @@ body {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-heavy);
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
 }
 
 .btn-secondary {
@@ -218,17 +233,20 @@ body {
 }
 
 .btn-download {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    background: var(--gradient-download);
     color: white;
     box-shadow: var(--shadow-medium);
     position: relative;
     overflow: hidden;
+    border: 2px solid transparent;
+    background-clip: padding-box;
 }
 
 .btn-download:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-heavy);
-    background: linear-gradient(135deg, #16a34a, #15803d);
+    background: linear-gradient(135deg, var(--success-hover), var(--secondary-color));
+    border-color: var(--success-color);
 }
 
 .btn-download::before {
@@ -251,7 +269,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: var(--gradient-warm);
+    background: var(--gradient-hero);
     position: relative;
     overflow: hidden;
 }
@@ -353,7 +371,8 @@ body {
 }
 
 .chat-preview {
-    background: white;
+    background: var(--gradient-card);
+    backdrop-filter: blur(15px);
     border-radius: var(--radius-2xl);
     box-shadow: var(--shadow-heavy);
     overflow: hidden;
@@ -406,9 +425,10 @@ body {
 .status-dot {
     width: 8px;
     height: 8px;
-    background: #22c55e;
+    background: var(--online-color);
     border-radius: 50%;
     animation: pulse 2s infinite;
+    box-shadow: 0 0 0 2px rgba(184, 149, 106, 0.2);
 }
 
 .chat-messages {
@@ -549,7 +569,8 @@ section {
 }
 
 .feature-card {
-    background: var(--bg-secondary);
+    background: var(--gradient-card);
+    backdrop-filter: blur(10px);
     padding: var(--spacing-2xl);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-light);
