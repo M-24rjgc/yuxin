@@ -35,6 +35,72 @@
         </div>
     </nav>
 
+    <!-- 字体选择器 -->
+    <div class="font-selector">
+        <button class="font-selector-toggle" aria-label="选择字体">
+            <i class="fas fa-font"></i>
+            <span>字体</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="font-options">
+            <div class="font-options-header">
+                <h3>
+                    <i class="fas fa-universal-access"></i>
+                    选择字体
+                </h3>
+                <p>选择最适合您阅读的字体，特别为ADHD用户优化</p>
+            </div>
+            <button class="font-option active" data-font="marugo">
+                <div class="font-option-info">
+                    <div class="font-option-name">圆润字体</div>
+                    <div class="font-option-desc">温馨圆润，减少视觉疲劳</div>
+                </div>
+                <div class="font-option-preview" style="font-family: var(--font-marugo);">Aa文</div>
+                <i class="fas fa-check font-option-check"></i>
+            </button>
+            <button class="font-option" data-font="noto">
+                <div class="font-option-info">
+                    <div class="font-option-name">思源黑体</div>
+                    <div class="font-option-desc">清晰易读，适合长时间阅读</div>
+                </div>
+                <div class="font-option-preview" style="font-family: var(--font-noto);">Aa文</div>
+                <i class="fas fa-check font-option-check"></i>
+            </button>
+            <button class="font-option" data-font="source">
+                <div class="font-option-info">
+                    <div class="font-option-name">Source Han Sans</div>
+                    <div class="font-option-desc">专业设计，字形规整</div>
+                </div>
+                <div class="font-option-preview" style="font-family: var(--font-source);">Aa文</div>
+                <i class="fas fa-check font-option-check"></i>
+            </button>
+            <button class="font-option" data-font="inter">
+                <div class="font-option-info">
+                    <div class="font-option-name">Inter</div>
+                    <div class="font-option-desc">现代简洁，数字友好</div>
+                </div>
+                <div class="font-option-preview" style="font-family: var(--font-inter);">Aa文</div>
+                <i class="fas fa-check font-option-check"></i>
+            </button>
+            <button class="font-option" data-font="lexend">
+                <div class="font-option-info">
+                    <div class="font-option-name">Lexend</div>
+                    <div class="font-option-desc">专为阅读速度优化</div>
+                </div>
+                <div class="font-option-preview" style="font-family: var(--font-lexend);">Aa文</div>
+                <i class="fas fa-check font-option-check"></i>
+            </button>
+            <button class="font-option" data-font="atkinson">
+                <div class="font-option-info">
+                    <div class="font-option-name">Atkinson Hyperlegible</div>
+                    <div class="font-option-desc">专为视觉障碍用户设计</div>
+                </div>
+                <div class="font-option-preview" style="font-family: var(--font-atkinson);">Aa文</div>
+                <i class="fas fa-check font-option-check"></i>
+            </button>
+        </div>
+    </div>
+
     <!-- 主页面 -->
     <main>
         <!-- 英雄区域 -->
@@ -61,6 +127,10 @@
                         <div class="feature-tag">
                             <i class="fas fa-memory"></i>
                             <span>记忆增强系统</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-heart"></i>
+                            <span>温暖专业</span>
                         </div>
                     </div>
                     <div class="hero-buttons">
@@ -97,17 +167,17 @@
                             <div class="chat-messages">
                                 <div class="message bot-message">
                                     <div class="message-content">
-                                        您好，我是Dr. Lin，很高兴为您提供心理咨询服务。请告诉我今天您想聊些什么？
+                                        您好，我是Dr. Lin ☕ 很高兴在这个温馨的空间与您相遇。请放松心情，告诉我今天您想聊些什么？
                                     </div>
                                 </div>
                                 <div class="message user-message">
                                     <div class="message-content">
-                                        最近工作压力很大，总是感到焦虑...
+                                        最近工作压力很大，总是感到焦虑，注意力也很难集中...
                                     </div>
                                 </div>
                                 <div class="message bot-message">
                                     <div class="message-content">
-                                        我理解您的感受。让我们一起探索这种焦虑的根源，并找到适合您的应对方法。
+                                        我完全理解您的感受 💙 让我们一起在这个安全的环境中，慢慢探索这些情绪，找到属于您的平静之道。
                                     </div>
                                 </div>
                             </div>
@@ -121,6 +191,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- 温馨分割线 -->
+        <div class="section-divider"></div>
 
         <!-- 功能特性 -->
         <section id="features" class="features">
@@ -176,6 +249,9 @@
             </div>
         </section>
 
+        <!-- 温馨分割线 -->
+        <div class="section-divider"></div>
+
         <!-- ADHD友好设计 -->
         <section id="innovation" class="innovation">
             <div class="container">
@@ -188,9 +264,9 @@
                         <div class="innovation-visual">
                             <div class="adhd-demo">
                                 <div class="demo-text">
-                                    <p class="highlight-demo">这是一段支持点击高亮的文本</p>
-                                    <p class="spacing-demo">增加的行间距和字间距提升可读性</p>
-                                    <p class="focus-demo">动态焦点指示器帮助保持注意力</p>
+                                    <p class="highlight-demo">✨ 点击我试试看！这段文字支持高亮显示，帮助ADHD用户聚焦阅读</p>
+                                    <p class="spacing-demo">📖 舒适的行间距和字间距设计，让阅读变得更加轻松愉快</p>
+                                    <p class="focus-demo">🎯 动态焦点指示器和温暖配色，营造专业而温馨的咨询环境</p>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +281,8 @@
                                 <li><i class="fas fa-text-height"></i> 优化的行间距和字间距</li>
                                 <li><i class="fas fa-eye"></i> 动态视觉提示和焦点指示器</li>
                                 <li><i class="fas fa-palette"></i> 柔和的配色方案减少视觉疲劳</li>
-                                <li><i class="fas fa-font"></i> 圆润字体提升阅读舒适度</li>
+                                <li><i class="fas fa-font"></i> 多种ADHD友好字体可选</li>
+                                <li><i class="fas fa-cog"></i> 个性化字体偏好记忆</li>
                             </ul>
                         </div>
                     </div>
@@ -227,27 +304,113 @@
                         </div>
                         <div class="innovation-visual">
                             <div class="memory-demo">
-                                <div class="table-preview">
-                                    <div class="table-header">
-                                        <span>记忆管理系统</span>
-                                        <i class="fas fa-cog"></i>
+                                <div class="memory-system-preview">
+                                    <div class="memory-header">
+                                        <span>📋 记忆档案系统</span>
+                                        <div class="memory-progress">
+                                            <span class="progress-text">时间地点记录</span>
+                                            <span class="progress-counter">1/6</span>
+                                        </div>
+                                        <i class="fas fa-database"></i>
                                     </div>
-                                    <div class="table-content">
-                                        <div class="table-row">
-                                            <span class="date">2024-01-15</span>
-                                            <span class="emotion">焦虑</span>
-                                            <span class="level">7/10</span>
+                                    <div class="memory-modules">
+                                        <div class="memory-module active" data-module="timeline">
+                                            <div class="module-header">
+                                                <i class="fas fa-clock"></i>
+                                                <span>时间地点记录</span>
+                                            </div>
+                                            <div class="module-content">
+                                                <div class="record-item">
+                                                    <span class="field">时间</span>
+                                                    <span class="field">地点</span>
+                                                    <span class="field">人物</span>
+                                                    <span class="field">事件</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="table-row">
-                                            <span class="date">2024-01-20</span>
-                                            <span class="emotion">平静</span>
-                                            <span class="level">4/10</span>
+
+                                        <div class="memory-module" data-module="personal">
+                                            <div class="module-header">
+                                                <i class="fas fa-user"></i>
+                                                <span>人物信息表</span>
+                                            </div>
+                                            <div class="module-content">
+                                                <div class="record-item">
+                                                    <span class="field">姓名</span>
+                                                    <span class="field">性别</span>
+                                                    <span class="field">民族</span>
+                                                    <span class="field">年龄</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="table-row">
-                                            <span class="date">2024-01-25</span>
-                                            <span class="emotion">积极</span>
-                                            <span class="level">3/10</span>
+
+                                        <div class="memory-module" data-module="events">
+                                            <div class="module-header">
+                                                <i class="fas fa-exclamation-triangle"></i>
+                                                <span>重大生活事件</span>
+                                            </div>
+                                            <div class="module-content">
+                                                <div class="record-item">
+                                                    <span class="field">时间</span>
+                                                    <span class="field">内容</span>
+                                                    <span class="field">影响</span>
+                                                    <span class="field">应对</span>
+                                                </div>
+                                            </div>
                                         </div>
+
+                                        <div class="memory-module" data-module="psychology">
+                                            <div class="module-header">
+                                                <i class="fas fa-brain"></i>
+                                                <span>当前心理状况</span>
+                                            </div>
+                                            <div class="module-content">
+                                                <div class="record-item">
+                                                    <span class="field">认识层面</span>
+                                                    <span class="field">情绪</span>
+                                                    <span class="field">行为问题</span>
+                                                    <span class="field">其他</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="memory-module" data-module="lifestyle">
+                                            <div class="module-header">
+                                                <i class="fas fa-heart"></i>
+                                                <span>生活状况</span>
+                                            </div>
+                                            <div class="module-content">
+                                                <div class="record-item">
+                                                    <span class="field">饮食状况</span>
+                                                    <span class="field">睡眠质量</span>
+                                                    <span class="field">运动锻炼</span>
+                                                    <span class="field">社交参与</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="memory-module" data-module="family">
+                                            <div class="module-header">
+                                                <i class="fas fa-users"></i>
+                                                <span>家庭关系</span>
+                                            </div>
+                                            <div class="module-content">
+                                                <div class="record-item">
+                                                    <span class="field">人物</span>
+                                                    <span class="field">与user关系</span>
+                                                    <span class="field">对user态度</span>
+                                                    <span class="field">家庭氛围</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="memory-navigation">
+                                        <div class="nav-dot active" data-target="timeline" title="时间地点记录"></div>
+                                        <div class="nav-dot" data-target="personal" title="人物信息表"></div>
+                                        <div class="nav-dot" data-target="events" title="重大生活事件"></div>
+                                        <div class="nav-dot" data-target="psychology" title="当前心理状况"></div>
+                                        <div class="nav-dot" data-target="lifestyle" title="生活状况"></div>
+                                        <div class="nav-dot" data-target="family" title="家庭关系"></div>
                                     </div>
                                 </div>
                             </div>
@@ -256,6 +419,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- 温馨分割线 -->
+        <div class="section-divider"></div>
 
         <!-- 技术架构 -->
         <section id="architecture" class="architecture">
@@ -337,6 +503,9 @@
             </div>
         </section>
 
+        <!-- 温馨分割线 -->
+        <div class="section-divider"></div>
+
         <!-- 演示展示 -->
         <section id="demo" class="demo">
             <div class="container">
@@ -401,6 +570,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- 温馨分割线 -->
+        <div class="section-divider"></div>
 
         <!-- 联系我们 -->
         <section id="contact" class="contact">
