@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遇心 - 可视化AI心理咨询系统</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="遇心Logo" class="logo-img">
+                <span>遇心</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#features" class="nav-link">功能特性</a></li>
+                <li><a href="#architecture" class="nav-link">技术架构</a></li>
+                <li><a href="#innovation" class="nav-link">创新亮点</a></li>
+                <li><a href="#demo" class="nav-link">演示展示</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页面 -->
+    <main>
+        <!-- 英雄区域 -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-main">遇心</span>
+                        <span class="title-sub">可视化AI心理咨询系统</span>
+                    </h1>
+                    <p class="hero-description">
+                        基于CogniTheraChain认知治疗链的专业AI心理咨询平台，
+                        融合多种心理治疗流派，提供个性化、可视化的心理健康服务
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-tag">
+                            <i class="fas fa-brain"></i>
+                            <span>多流派整合</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-universal-access"></i>
+                            <span>ADHD友好设计</span>
+                        </div>
+                        <div class="feature-tag">
+                            <i class="fas fa-memory"></i>
+                            <span>记忆增强系统</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#demo" class="btn btn-primary">
+                            <i class="fas fa-play"></i>
+                            观看演示
+                        </a>
+                        <a href="遇心.zip" class="btn btn-download" download="遇心.zip">
+                            <i class="fas fa-download"></i>
+                            下载遇心
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            了解更多
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <div class="chat-preview">
+                            <div class="chat-header">
+                                <div class="chat-avatar">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div class="chat-info">
+                                    <h4>Dr. Lin</h4>
+                                    <span>心理咨询师</span>
+                                </div>
+                                <div class="chat-status">
+                                    <span class="status-dot"></span>
+                                    在线
+                                </div>
+                            </div>
+                            <div class="chat-messages">
+                                <div class="message bot-message">
+                                    <div class="message-content">
+                                        您好，我是Dr. Lin，很高兴为您提供心理咨询服务。请告诉我今天您想聊些什么？
+                                    </div>
+                                </div>
+                                <div class="message user-message">
+                                    <div class="message-content">
+                                        最近工作压力很大，总是感到焦虑...
+                                    </div>
+                                </div>
+                                <div class="message bot-message">
+                                    <div class="message-content">
+                                        我理解您的感受。让我们一起探索这种焦虑的根源，并找到适合您的应对方法。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能特性 -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>核心功能特性</h2>
+                    <p>CogniTheraChain系统集成了多种先进技术，为用户提供全方位的心理健康支持</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>多流派心理治疗</h3>
+                        <p>支持CBT认知行为疗法、人本主义、精神分析、格式塔等多种心理治疗流派，根据用户需求智能选择最适合的治疗方法</p>
+                        <ul class="feature-list">
+                            <li>认知行为疗法(CBT)</li>
+                            <li>人本主义疗法</li>
+                            <li>精神分析疗法</li>
+                            <li>格式塔疗法</li>
+                            <li>后现代主义疗法</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>智能风险评估</h3>
+                        <p>实时监控用户心理状态，自动识别自杀/自伤风险信号，及时启动危机干预协议，确保用户安全</p>
+                        <ul class="feature-list">
+                            <li>多模态风险检测</li>
+                            <li>关键词智能识别</li>
+                            <li>危机干预协议</li>
+                            <li>全国心理热线接入</li>
+                            <li>24小时安全监护</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <h3>记忆增强系统</h3>
+                        <p>突破AI对话记忆限制，通过可视化表格管理系统，持续跟踪用户心理状态变化和治疗进展</p>
+                        <ul class="feature-list">
+                            <li>可视化记忆管理</li>
+                            <li>治疗进展追踪</li>
+                            <li>数据导入导出</li>
+                            <li>历史记录查看</li>
+                            <li>智能数据分析</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADHD友好设计 -->
+        <section id="innovation" class="innovation">
+            <div class="container">
+                <div class="section-header">
+                    <h2>创新亮点</h2>
+                    <p>专为特殊需求用户设计的无障碍心理咨询体验</p>
+                </div>
+                <div class="innovation-content">
+                    <div class="innovation-item">
+                        <div class="innovation-visual">
+                            <div class="adhd-demo">
+                                <div class="demo-text">
+                                    <p class="highlight-demo">这是一段支持点击高亮的文本</p>
+                                    <p class="spacing-demo">增加的行间距和字间距提升可读性</p>
+                                    <p class="focus-demo">动态焦点指示器帮助保持注意力</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="innovation-info">
+                            <h3>
+                                <i class="fas fa-universal-access"></i>
+                                ADHD友好设计
+                            </h3>
+                            <p>专门为注意力缺陷多动障碍用户优化的界面设计，提供更好的阅读和交互体验</p>
+                            <ul class="innovation-features">
+                                <li><i class="fas fa-mouse-pointer"></i> 段落点击高亮功能</li>
+                                <li><i class="fas fa-text-height"></i> 优化的行间距和字间距</li>
+                                <li><i class="fas fa-eye"></i> 动态视觉提示和焦点指示器</li>
+                                <li><i class="fas fa-palette"></i> 柔和的配色方案减少视觉疲劳</li>
+                                <li><i class="fas fa-font"></i> 圆润字体提升阅读舒适度</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="innovation-item reverse">
+                        <div class="innovation-info">
+                            <h3>
+                                <i class="fas fa-chart-line"></i>
+                                可视化记忆管理
+                            </h3>
+                            <p>突破传统AI对话的记忆限制，通过表格化数据管理实现长期记忆和治疗追踪</p>
+                            <ul class="innovation-features">
+                                <li><i class="fas fa-table"></i> 结构化数据存储和管理</li>
+                                <li><i class="fas fa-search"></i> 智能搜索和数据过滤</li>
+                                <li><i class="fas fa-download"></i> 数据导入导出功能</li>
+                                <li><i class="fas fa-history"></i> 完整的操作历史记录</li>
+                                <li><i class="fas fa-chart-bar"></i> 治疗进展可视化分析</li>
+                            </ul>
+                        </div>
+                        <div class="innovation-visual">
+                            <div class="memory-demo">
+                                <div class="table-preview">
+                                    <div class="table-header">
+                                        <span>记忆管理系统</span>
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <div class="table-content">
+                                        <div class="table-row">
+                                            <span class="date">2024-01-15</span>
+                                            <span class="emotion">焦虑</span>
+                                            <span class="level">7/10</span>
+                                        </div>
+                                        <div class="table-row">
+                                            <span class="date">2024-01-20</span>
+                                            <span class="emotion">平静</span>
+                                            <span class="level">4/10</span>
+                                        </div>
+                                        <div class="table-row">
+                                            <span class="date">2024-01-25</span>
+                                            <span class="emotion">积极</span>
+                                            <span class="level">3/10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技术架构 -->
+        <section id="architecture" class="architecture">
+            <div class="container">
+                <div class="section-header">
+                    <h2>技术架构</h2>
+                    <p>基于SillyTavern平台的模块化设计，支持多种AI模型和扩展插件</p>
+                </div>
+                <div class="architecture-diagram">
+                    <div class="arch-layer">
+                        <h3>用户界面层</h3>
+                        <div class="arch-components">
+                            <div class="arch-component">
+                                <i class="fas fa-desktop"></i>
+                                <span>SillyTavern平台</span>
+                            </div>
+                            <div class="arch-component">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>主题系统</span>
+                            </div>
+                            <div class="arch-component">
+                                <i class="fas fa-plug"></i>
+                                <span>扩展插件</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <h3>核心引擎层</h3>
+                        <div class="arch-components">
+                            <div class="arch-component">
+                                <i class="fas fa-brain"></i>
+                                <span>认知治疗引擎</span>
+                            </div>
+                            <div class="arch-component">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>风险检测器</span>
+                            </div>
+                            <div class="arch-component">
+                                <i class="fas fa-balance-scale"></i>
+                                <span>偏见检测器</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <h3>AI模型层</h3>
+                        <div class="arch-components">
+                            <div class="arch-component">
+                                <i class="fas fa-robot"></i>
+                                <span>Claude 3.5 Sonnet</span>
+                            </div>
+                            <div class="arch-component">
+                                <i class="fas fa-robot"></i>
+                                <span>GPT-4 Turbo</span>
+                            </div>
+                            <div class="arch-component">
+                                <i class="fas fa-robot"></i>
+                                <span>其他模型</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <h3>数据存储层</h3>
+                        <div class="arch-components">
+                            <div class="arch-component">
+                                <i class="fas fa-database"></i>
+                                <span>记忆数据库</span>
+                            </div>
+                            <div class="arch-component">
+                                <i class="fas fa-file-alt"></i>
+                                <span>配置文件</span>
+                            </div>
+                            <div class="arch-component">
+                                <i class="fas fa-history"></i>
+                                <span>历史记录</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 演示展示 -->
+        <section id="demo" class="demo">
+            <div class="container">
+                <div class="section-header">
+                    <h2>系统演示</h2>
+                    <p>体验CogniTheraChain系统的强大功能和友好界面</p>
+                </div>
+                <div class="demo-content">
+                    <div class="demo-video">
+                        <video controls poster="" class="demo-video-player">
+                            <source src="demo-video.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                        <div class="video-info">
+                            <h4>系统演示视频</h4>
+                            <p>完整展示CogniTheraChain系统的核心功能和操作流程</p>
+                            <div class="video-actions">
+                                <a href="demo-video.mp4" class="btn btn-secondary" download="遇心系统演示.mp4">
+                                    <i class="fas fa-download"></i>
+                                    下载视频
+                                </a>
+                                <a href="遇心.zip" class="btn btn-download" download="遇心.zip">
+                                    <i class="fas fa-download"></i>
+                                    下载完整系统
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-features">
+                        <h3>演示内容包括</h3>
+                        <div class="demo-list">
+                            <div class="demo-item">
+                                <i class="fas fa-comments"></i>
+                                <div>
+                                    <h4>智能对话体验</h4>
+                                    <p>展示AI咨询师的专业对话能力和共情响应</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="fas fa-cogs"></i>
+                                <div>
+                                    <h4>流派切换演示</h4>
+                                    <p>实时切换不同心理治疗流派的咨询风格</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="fas fa-table"></i>
+                                <div>
+                                    <h4>记忆管理功能</h4>
+                                    <p>展示可视化记忆系统的数据管理能力</p>
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>安全保护机制</h4>
+                                    <p>演示风险检测和危机干预的自动触发</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我们 -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>联系我们</h2>
+                    <p>如有任何问题或建议，欢迎与我们联系</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>邮箱联系</h4>
+                                <p>contact@cognithera.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>开源项目</h4>
+                                <p>github.com/cognithera-chain</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-book"></i>
+                            <div>
+                                <h4>技术文档</h4>
+                                <p>查看完整的技术文档和部署指南</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>发送消息</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="您的邮箱" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="您的消息" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                发送消息
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="遇心Logo" class="logo-img">
+                        <span>遇心</span>
+                    </div>
+                    <p>专业的AI心理咨询系统，为每个人的心理健康保驾护航</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#features">功能特性</a></li>
+                        <li><a href="#architecture">技术架构</a></li>
+                        <li><a href="#innovation">创新亮点</a></li>
+                        <li><a href="#demo">演示展示</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>技术支持</h4>
+                    <ul>
+                        <li><a href="部署指南.md">部署指南</a></li>
+                        <li><a href="项目总结.md">项目总结</a></li>
+                        <li><a href="遇心.zip" download="遇心.zip">下载系统</a></li>
+                        <li><a href="demo-video.mp4" download="遇心系统演示.mp4">下载演示视频</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 遇心 CogniTheraChain. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
