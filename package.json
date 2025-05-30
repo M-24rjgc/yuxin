@@ -1,0 +1,30 @@
+{
+  "name": "yuxin-website",
+  "version": "1.0.0",
+  "description": "遇心 - 可视化AI心理咨询系统介绍网站",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "build:azure": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site - serve index.html'",
+    "dev": "python -m http.server 8000",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "AI",
+    "心理咨询",
+    "ADHD友好",
+    "静态网站",
+    "心理健康"
+  ],
+  "author": "M-24rjgc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M-24rjgc/yuxin.git"
+  },
+  "homepage": "https://github.com/M-24rjgc/yuxin",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
